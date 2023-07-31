@@ -1,13 +1,59 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
 a {
   color: orange;
 }
-
 a:hover {
   color: black;
 }
-/*# sourceMappingURL=style.css.map */
+
+#demo {
+  padding: 80px;
+}
+#demo .box {
+  position: relative;
+}
+#demo .box .box1, #demo .box .box2, #demo .box .box3 {
+  margin: 0 120px 0 0;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #080808;
+  background-color: #677bc0;
+  padding: 75px;
+}
+#demo .box .box1 .minibox, #demo .box .box2 .minibox, #demo .box .box3 .minibox {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #080808;
+  padding: 45px;
+  color: #ffffff;
+  font-size: 30px;
+}
+#demo .box .box2 {
+  position: absolute;
+  top: 0;
+  left: 550px;
+}
+#demo .box .box3 {
+  position: absolute;
+  top: 0;
+  left: 1050px;
+}
+#demo .box4 {
+  position: relative;
+  padding: 80px;
+}
+#demo .box4 .minibox1, #demo .box4 .minibox2 {
+  width: 220px;
+  height: 105px;
+  color: #000000;
+  border: 2px solid #000000;
+}
+#demo .box4 .minibox2 {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+}/*# sourceMappingURL=style.css.map */
