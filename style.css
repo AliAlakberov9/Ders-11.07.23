@@ -8,95 +8,31 @@ a {
 }
 a:hover {
   color: black;
+  width: 100%;
+  height: 100%;
 }
 
-#demo {
-  padding: 80px;
-}
 #demo .box {
-  position: relative;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 #demo .box .box1, #demo .box .box2, #demo .box .box3 {
-  width: 300px;
-  height: 300px;
-  background-color: #4f82a1;
-  padding: 75px 0 0 75px;
-}
-#demo .box .box1 .minibox, #demo .box .box2 .minibox, #demo .box .box3 .minibox {
-  width: 140px;
-  height: 140px;
-  padding: 45px;
-  background-color: #325776;
-  font-size: 30px;
-  color: #ffffff;
-  border: 2px solid #325776;
-  transition: 5s;
-}
-#demo .box .box1 .minibox:hover, #demo .box .box2 .minibox:hover, #demo .box .box3 .minibox:hover {
   width: 200px;
   height: 200px;
+  background-color: #4f82a1;
+  padding: 47px 47px 47px 47px;
+}
+#demo .box .box1 .minibox, #demo .box .box2 .minibox, #demo .box .box3 .minibox {
+  width: 100px;
+  height: 100px;
+  background-color: #325776;
+  color: #ffffff;
+  padding: 37px 37px 37px 37px;
   border: 2px solid #325776;
-  padding: 5px 65px 25px 5px;
+  transition: 2s;
 }
-#demo .box .box2 {
-  position: absolute;
-  top: 0;
-  left: 650px;
-}
-#demo .box .box3 {
-  position: absolute;
-  top: 0;
-  left: 1300px;
-}
-#demo .box4 {
-  position: relative;
-  padding: 80px;
-}
-#demo .box4 .minibox1, #demo .box4 .minibox2 {
-  width: 230px;
-  height: 120px;
-  color: #000000;
-  margin: 40px 0 0 120px;
-  padding: 10px 0 0 80px;
-  font-size: 25px;
-  color: #ffffff;
-  background-color: #866278;
-}
-#demo .box4 .minibox2 {
-  position: absolute;
-  top: 90px;
-  left: 1050px;
-}
-#demo .box5 {
-  padding: 80px;
-  position: relative;
-}
-#demo .box5 .minibox1, #demo .box5 .minibox2, #demo .box5 .minibox3, #demo .box5 .minibox4 {
-  width: 300px;
-  height: 300px;
-  color: #ffffff;
-  border-radius: 150px;
-  background-color: #966b48;
-  font-size: 40px;
-  padding: 120px;
-}
-#demo .box5 .minibox1 {
-  position: absolute;
-  top: 85px;
-  left: -100px;
-}
-#demo .box5 .minibox2 {
-  position: absolute;
-  top: 85px;
-  left: 370px;
-}
-#demo .box5 .minibox3 {
-  position: absolute;
-  top: 85px;
-  left: 845px;
-}
-#demo .box5 .minibox4 {
-  position: absolute;
-  top: 85px;
-  left: 1310px;
+#demo .box .box1 .minibox:hover, #demo .box .box2 .minibox:hover, #demo .box .box3 .minibox:hover {
+  transform: scale(1.2);
+  border: 2px solid #325776;
 }/*# sourceMappingURL=style.css.map */
