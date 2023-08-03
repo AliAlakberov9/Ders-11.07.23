@@ -1,0 +1,54 @@
+#demo1
+    .box
+        padding: 50px
+        display: flex
+        justify-content: space-around
+        .minibox
+            width: 200px
+            height: 100px
+            background-color: #866278
+            color: #ffffff
+            font-size: 25px
+            padding: 10px 0 0 80px
+            transition: 2s
+            &:hover
+                cursor: pointer
+                background-color: #4d4556
+                border: 3px solid #cbbdc6
+    @media screen and (max-width: 800px)
+        .box
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            margin: 0 0 0 35px
+            .minibox
+                width: 120px
+                height: 60px
+                background-color: #7485bf
+                color: #ffffff
+                font-size: 25px
+                padding: 10px 0 0 30px
+                border-radius: 5px
+                transition: 2s
+                &:hover
+                    cursor: pointer
+                    background-color: #4d4556
+                    border: 3px solid #cbbdc6
+    @media screen and (max-width: 500px)
+        .box
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            margin: 0 0 0 30px
+            .minibox
+                width: 100px
+                height: 80px
+                background-color: #000000
+                color: #ffffff
+                font-size: 25px
+                padding: 10px 0 0 30px
+                transition: 2s
+                &:hover
+                    cursor: pointer
+                    background-color: #4d4556
+                    border: 3px solid #cbbdc6

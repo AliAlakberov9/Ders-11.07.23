@@ -9,7 +9,7 @@ a {
 a:hover {
   color: black;
   width: 100%;
-  height: 100%;
+  height: 100px;
 }
 
 #demo .box {
@@ -28,11 +28,124 @@ a:hover {
   height: 100px;
   background-color: #325776;
   color: #ffffff;
-  padding: 37px 37px 37px 37px;
+  padding: 37px 37px;
   border: 2px solid #325776;
   transition: 2s;
 }
 #demo .box .box1 .minibox:hover, #demo .box .box2 .minibox:hover, #demo .box .box3 .minibox:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   border: 2px solid #325776;
+}
+@media screen and (min-width: 800px) {
+  #demo .box1, #demo .box2, #demo .box3 {
+    width: 200px;
+    height: 200px;
+    background-color: #4f82a1;
+    padding: 47px 47px 47px 47px;
+    margin: 0 15px 0 15px;
+  }
+  #demo .box1 .minibox, #demo .box2 .minibox, #demo .box3 .minibox {
+    width: 100px;
+    height: 100px;
+    background-color: #325776;
+    color: #ffffff;
+    padding: 37px 37px;
+    corder: 2px solid #325776;
+    transition: 2s;
+  }
+  #demo .box1 .minibox:hover, #demo .box2 .minibox:hover, #demo .box3 .minibox:hover {
+    transform: scale(1.4);
+    border: 2px solid #325776;
+  }
+}
+@media screen and (max-width: 600px) {
+  #demo .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #demo .box .box1, #demo .box .box2, #demo .box .box3 {
+    width: 200px;
+    height: 200px;
+    background-color: #4f82a1;
+    padding: 47px 47px 47px 47px;
+  }
+  #demo .box .box1 .minibox, #demo .box .box2 .minibox, #demo .box .box3 .minibox {
+    width: 100px;
+    height: 100px;
+    background-color: #325776;
+    color: #ffffff;
+    padding: 37px 37px;
+    border: 2px solid #325776;
+    transition: 2s;
+  }
+  #demo .box .box1 .minibox:hover, #demo .box .box2 .minibox:hover, #demo .box .box3 .minibox:hover {
+    transform: scale(1.4);
+    border: 2px solid #325776;
+  }
+}
+
+#demo1 .box {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+#demo1 .box .minibox {
+  width: 200px;
+  height: 100px;
+  background-color: #866278;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 0 0 80px;
+  transition: 2s;
+}
+#demo1 .box .minibox:hover {
+  cursor: pointer;
+  background-color: #4d4556;
+  border: 3px solid #cbbdc6;
+}
+@media screen and (max-width: 800px) {
+  #demo1 .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 0 0 35px;
+  }
+  #demo1 .box .minibox {
+    width: 120px;
+    height: 60px;
+    background-color: #7485bf;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 0 0 30px;
+    border-radius: 5px;
+    transition: 2s;
+  }
+  #demo1 .box .minibox:hover {
+    cursor: pointer;
+    background-color: #4d4556;
+    border: 3px solid #cbbdc6;
+  }
+}
+@media screen and (max-width: 500px) {
+  #demo1 .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 0 0 30px;
+  }
+  #demo1 .box .minibox {
+    width: 100px;
+    height: 80px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 0 0 30px;
+    transition: 2s;
+  }
+  #demo1 .box .minibox:hover {
+    cursor: pointer;
+    background-color: #4d4556;
+    border: 3px solid #cbbdc6;
+  }
 }/*# sourceMappingURL=style.css.map */

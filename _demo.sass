@@ -13,10 +13,48 @@
                 height: 100px
                 background-color: #325776
                 color: #ffffff
-                padding: 37px 37px 37px 37px
+                padding: 37px 37px
                 border: 2px solid #325776
                 transition: 2s
                 &:hover
-                    transform: scale(1.2)
+                    transform: scale(1.4)
                     border: 2px solid #325776
-        
+    @media screen and (min-width: 800px)
+        .box1,.box2,.box3
+            width: 200px
+            height: 200px
+            background-color: #4f82a1
+            padding: 47px 47px 47px 47px
+            margin: 0 15px 0 15px
+            .minibox
+                width: 100px
+                height: 100px
+                background-color: #325776
+                color: #ffffff
+                padding: 37px 37px
+                corder: 2px solid #325776
+                transition: 2s
+                &:hover
+                    transform: scale(1.4)
+                    border: 2px solid #325776
+    @media screen and (max-width: 600px)
+        .box
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            .box1,.box2,.box3
+                width: 200px
+                height: 200px
+                background-color: #4f82a1
+                padding: 47px 47px 47px 47px
+                .minibox
+                    width: 100px
+                    height: 100px
+                    background-color: #325776
+                    color: #ffffff
+                    padding: 37px 37px
+                    border: 2px solid #325776
+                    transition: 2s
+                    &:hover
+                        transform: scale(1.4)
+                        border: 2px solid #325776
