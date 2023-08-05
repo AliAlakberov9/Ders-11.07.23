@@ -216,4 +216,23 @@ a:hover {
     padding: 20px 0 0 12px;
     margin: 0 0 0 0;
   }
+}
+
+#demo3 .box {
+  padding: 50px;
+  position: relative;
+}
+#demo3 .box .minibox {
+  width: 250px;
+  height: 180px;
+  background-color: #476a8b;
+  margin: 10px 0 0 0;
+  padding: 60px 0 0 80px;
+  font-size: 35px;
+  color: #ffffff;
+}
+#demo3 .box .box2 {
+  position: absolute;
+  top: 810px;
+  left: 300px;
 }/*# sourceMappingURL=style.css.map */
