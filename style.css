@@ -63,6 +63,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0 150px 0 170px;
   }
   #demo .box .box1, #demo .box .box2, #demo .box .box3 {
     width: 200px;
@@ -105,12 +106,6 @@ a:hover {
   border: 3px solid #cbbdc6;
 }
 @media screen and (max-width: 800px) {
-  #demo1 .box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 0 0 35px;
-  }
   #demo1 .box .minibox {
     width: 120px;
     height: 60px;
@@ -132,7 +127,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 0 0 30px;
   }
   #demo1 .box .minibox {
     width: 100px;
@@ -140,12 +134,86 @@ a:hover {
     background-color: #000000;
     color: #ffffff;
     font-size: 25px;
-    padding: 10px 0 0 30px;
+    padding: 10px 0 0 20px;
+    margin: 0 0 0 220px;
     transition: 2s;
   }
   #demo1 .box .minibox:hover {
     cursor: pointer;
     background-color: #4d4556;
     border: 3px solid #cbbdc6;
+  }
+}
+
+#demo2 .box {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+#demo2 .box .minibox {
+  width: 190px;
+  height: 190px;
+  background-color: #946c4a;
+  border-radius: 95px;
+  color: #ffffff;
+  padding: 70px 0 0 75px;
+  font-size: 30px;
+  margin: 0 95px 0 10px;
+  transition: 2s;
+}
+#demo2 .box .minibox:hover {
+  border-radius: 0px;
+}
+@media screen and (max-width: 1400px) {
+  #demo2 .box .minibox {
+    width: 190px;
+    height: 190px;
+    background-color: #946c4a;
+    border-radius: 95px;
+    color: #ffffff;
+    padding: 70px 0 0 70px;
+    font-size: 30px;
+    margin: 0 0px 0 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #demo2 .box .minibox {
+    width: 150px;
+    height: 150px;
+    background-color: #946c4a;
+    border-radius: 95px;
+    color: #ffffff;
+    padding: 55px 0 0 55px;
+    font-size: 25px;
+    margin: 0 0px 0 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #demo2 .box .minibox {
+    width: 250px;
+    height: 60px;
+    background-color: #c6c588;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 0 0 5px;
+    font-size: 20px;
+    padding: 20px 0 0 10px;
+    margin: 10px 90px 0 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #demo2 .box {
+    display: flex;
+    flex-direction: column;
+  }
+  #demo2 .box .minibox {
+    width: 60px;
+    height: 60px;
+    background-color: #c6c588;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 20px 0 0 12px;
+    margin: 0 0 0 0;
   }
 }/*# sourceMappingURL=style.css.map */
